@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Guruku</string>
+    <string name="login">Login</string>
+    <string name="UsernameG">Username guest</string>
+    <string name="saved_guest">Saved guest</string>
+    <string name="perkalian">Saved Perkalian</string>
+    <string name="pertambahan">Saved Pertambahan</string>
+    <string name="pengurangan">Saved Pengurangan</string>
+    <string name="pembagian">Saved Pembagian</string>
+    <string name="password">Saved Password</string>
+</resources>

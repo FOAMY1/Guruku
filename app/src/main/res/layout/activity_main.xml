@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:background="@drawable/bg"
+    android:outlineProvider="none"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/EdtUsername"
+        android:layout_width="288dp"
+        android:layout_height="48dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/shape"
+        android:fontFamily="casual"
+        android:hint="Username"
+        android:outlineProvider="background"
+        android:padding="10dp"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        android:typeface="sans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.389" />
+
+    <EditText
+        android:id="@+id/Edtpassword"
+        android:layout_width="288dp"
+        android:layout_height="48dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/shape"
+        android:fontFamily="casual"
+        android:hint="Password"
+        android:padding="10dp"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        android:typeface="sans"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EdtUsername"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <Button
+        android:id="@+id/BtnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#3C64D7"
+        android:onClick="LoginReg"
+        android:padding="0dp"
+        android:paddingStart="0dp"
+        android:text="@string/login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.188"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Edtpassword"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <Button
+        android:id="@+id/BtnGuest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#03A9F4"
+        android:onClick="Guest"
+        android:text="Login as a guest"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.283"
+        app:layout_constraintStart_toEndOf="@+id/BtnLogin"
+        app:layout_constraintTop_toBottomOf="@+id/Edtpassword"
+        app:layout_constraintVertical_bias="0.027" />
+
+    <TextView
+        android:id="@+id/TxtRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:fontFamily="casual"
+        android:minHeight="48dp"
+        android:onClick="Reg"
+        android:text="Register"
+        android:textColor="#673AB7"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        android:typeface="sans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnLogin"
+        app:layout_constraintVertical_bias="0.029" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
